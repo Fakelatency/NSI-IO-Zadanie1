@@ -22,7 +22,11 @@ int main() {
         cout << "MENU" << endl;
         cout << "Podaj numer czynnosci, ktora chcesz wykonac" << endl;
         cout << "0. Wyjscie" << endl;
+        cout << "1. Oblicz silnie" << endl;
         cin >> wyjscie;
+        if (wyjscie == 1) {
+            cout << "Silnia z " << a << " wynosi: " << silnia(a) << endl;
+        }
     } while(wyjscie != 0);
     return 0;
 }
